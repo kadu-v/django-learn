@@ -1,18 +1,21 @@
 version: "3"
 
 services:
-  db:
+  dev_db:
     image: postgres
     environment:
       - "POSTGRES_USER=postgres"
       - "POSTGRES_PASSWORD=postgres"
 
-  web:
-    build: .
-    command: python manage.py runserver 0.0.0.0:8000
+  dev_web:
+
+    build:
+      context: ../
+      dockerfile: Dockerfile
+    command: sleep infinity
     volumes:
-      - .:/workspace
+      - ..:/workspace
     ports:
       - "8000:8000"
     depends_on:
-      - db
+      - dev_db
