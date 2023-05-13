@@ -40,14 +40,15 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link {% block active_inquiry %}{% endblock %}" href="#">INQUIRY</a>
+                            <a class="nav-link {% block active_inquiry %}{% endblock %}"
+                                href="{% url 'diary:inquiry' %}">INQUIRY</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Log Out</a>
                         </li>
-                        <li class="nav-item">
+                        <li class=" nav-item">
                             <a class="nav-link" href="#">Sign Up</a>
                         </li>
                         <li class="nav-item">
