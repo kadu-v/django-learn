@@ -1,0 +1,328 @@
+2023-05-17 15:46:46,244	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-17 15:51:23,165	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-17 15:51:36,261	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/diary/views.py changed, reloading.
+2023-05-17 15:51:36,420	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-17 15:51:43,505	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/diary/views.py changed, reloading.
+2023-05-17 15:51:43,674	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-17 15:51:52,101	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5212
+2023-05-17 15:51:52,111	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
+2023-05-17 15:51:52,117	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 304 0
+2023-05-17 15:51:52,121	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/assets/img/01.jpg HTTP/1.1" 200 547797
+2023-05-17 15:51:52,123	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 15:51:52,124	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/assets/img/02.jpg HTTP/1.1" 200 252376
+2023-05-17 15:51:52,127	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/assets/img/03.jpg HTTP/1.1" 200 535000
+2023-05-17 15:51:52,667	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2023-05-17 15:51:52,667	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
+2023-05-17 15:51:54,679	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5566
+2023-05-17 15:51:54,689	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 15:52:04,782	[ERROR]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /inquiry
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/diary/views.py", line 20, in form_valid
+    form.send_emal()
+    ^^^^^^^^^^^^^^
+AttributeError: 'InquiryForm' object has no attribute 'send_emal'
+2023-05-17 15:52:04,783	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 500 76509
+2023-05-17 15:52:33,957	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/diary/views.py changed, reloading.
+2023-05-17 15:52:34,116	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-17 15:52:37,112	[ERROR]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /inquiry
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/diary/views.py", line 20, in form_valid
+    form.send_email()
+    ^^^^^^^^^^^^^^^
+AttributeError: 'InquiryForm' object has no attribute 'send_email'
+2023-05-17 15:52:37,114	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 500 76517
+2023-05-17 15:52:39,561	[ERROR]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /inquiry
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/diary/views.py", line 20, in form_valid
+    form.send_email()
+    ^^^^^^^^^^^^^^^
+AttributeError: 'InquiryForm' object has no attribute 'send_email'
+2023-05-17 15:52:39,562	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 500 76517
+2023-05-17 15:52:43,970	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5212
+2023-05-17 15:52:43,984	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 15:52:46,830	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5212
+2023-05-17 15:52:46,848	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
+2023-05-17 15:52:46,851	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 15:52:46,852	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
+2023-05-17 15:52:46,852	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/assets/img/02.jpg HTTP/1.1" 200 252376
+2023-05-17 15:52:46,853	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/assets/img/01.jpg HTTP/1.1" 200 547797
+2023-05-17 15:52:46,853	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/assets/img/03.jpg HTTP/1.1" 200 535000
+2023-05-17 15:52:46,918	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2023-05-17 15:52:46,918	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
+2023-05-17 15:52:47,701	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5566
+2023-05-17 15:52:47,711	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 15:52:52,607	[ERROR]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /inquiry
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/diary/views.py", line 20, in form_valid
+    form.send_email()
+    ^^^^^^^^^^^^^^^
+AttributeError: 'InquiryForm' object has no attribute 'send_email'
+2023-05-17 15:52:52,607	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 500 76516
+2023-05-17 15:53:47,485	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/diary/views.py changed, reloading.
+2023-05-17 15:53:47,652	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-17 15:57:42,771	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/diary/forms.py changed, reloading.
+2023-05-17 15:57:42,947	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-17 15:59:35,402	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/diary/forms.py changed, reloading.
+2023-05-17 15:59:35,576	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-17 15:59:38,648	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/diary/forms.py changed, reloading.
+2023-05-17 15:59:38,807	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-17 15:59:42,605	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5566
+2023-05-17 15:59:42,618	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
+2023-05-17 15:59:42,620	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 15:59:42,620	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
+2023-05-17 15:59:42,680	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2023-05-17 15:59:42,680	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
+2023-05-17 15:59:49,124	[ERROR]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /inquiry
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/diary/views.py", line 20, in form_valid
+    form.send_email()
+  File "/workspace/diary/forms.py", line 37, in send_email
+    message.send()
+  File "/usr/local/lib/python3.11/site-packages/django/core/mail/message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/mail/backends/smtp.py", line 127, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/mail/backends/smtp.py", line 85, in open
+    self.connection = self.connection_class(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+OSError: [Errno 99] Cannot assign requested address
+2023-05-17 15:59:49,126	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 500 117787
+2023-05-17 16:10:39,029	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/private_diary/settings.py changed, reloading.
+2023-05-17 16:15:41,231	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-17 16:16:19,009	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-17 16:16:23,449	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5566
+2023-05-17 16:16:23,464	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:16:23,516	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2023-05-17 16:16:23,516	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
+2023-05-17 16:16:30,039	[INFO]	/workspace/diary/views.py(Line:21)	Inquary sent by kadu-v
+2023-05-17 16:16:30,040	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
+2023-05-17 16:16:30,043	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5566
+2023-05-17 16:16:30,055	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:17:35,135	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-17 16:17:59,276	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/private_diary/settings_common.py changed, reloading.
+2023-05-17 16:17:59,436	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-17 16:20:39,491	[INFO]	/workspace/diary/views.py(Line:21)	Inquary sent by kadu-v
+2023-05-17 16:20:39,492	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
+2023-05-17 16:20:39,499	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5566
+2023-05-17 16:20:39,518	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:22:14,340	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/diary/views.py changed, reloading.
+2023-05-17 16:22:14,509	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-17 16:22:52,691	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/diary/views.py changed, reloading.
+2023-05-17 16:22:52,846	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-17 16:32:09,521	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/private_diary/settings_common.py changed, reloading.
+2023-05-17 16:32:09,695	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-17 16:32:16,827	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
+2023-05-17 16:32:16,841	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
+2023-05-17 16:32:16,844	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:32:16,845	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
+2023-05-17 16:32:16,972	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2023-05-17 16:32:16,972	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
+2023-05-17 16:32:22,528	[INFO]	/workspace/diary/views.py(Line:23)	Inquary sent by kadu-v
+2023-05-17 16:32:22,529	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
+2023-05-17 16:32:22,532	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
+2023-05-17 16:32:22,543	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:32:42,794	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
+2023-05-17 16:32:42,813	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:32:45,262	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5221
+2023-05-17 16:32:48,883	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5221
+2023-05-17 16:32:48,898	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
+2023-05-17 16:32:48,903	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:32:48,905	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/assets/img/02.jpg HTTP/1.1" 200 252376
+2023-05-17 16:32:48,905	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
+2023-05-17 16:32:48,906	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/assets/img/01.jpg HTTP/1.1" 200 547797
+2023-05-17 16:32:48,906	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/assets/img/03.jpg HTTP/1.1" 200 535000
+2023-05-17 16:32:48,969	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2023-05-17 16:32:48,969	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
+2023-05-17 16:32:49,792	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
+2023-05-17 16:32:49,807	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:32:54,123	[INFO]	/workspace/diary/views.py(Line:23)	Inquary sent by kadu-v
+2023-05-17 16:32:54,124	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
+2023-05-17 16:32:54,127	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
+2023-05-17 16:32:54,137	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:33:27,111	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 6068
+2023-05-17 16:33:27,122	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
+2023-05-17 16:33:27,124	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:33:27,125	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
+2023-05-17 16:33:27,264	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2023-05-17 16:33:27,264	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
+2023-05-17 16:33:32,895	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
+2023-05-17 16:33:32,907	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:33:33,626	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
+2023-05-17 16:33:33,639	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:33:39,354	[INFO]	/workspace/diary/views.py(Line:23)	Inquary sent by kadu-v
+2023-05-17 16:33:39,355	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
+2023-05-17 16:33:39,358	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5934
+2023-05-17 16:33:39,381	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:33:56,307	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
+2023-05-17 16:33:56,332	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:33:57,035	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
+2023-05-17 16:33:57,047	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:34:02,768	[INFO]	/workspace/diary/views.py(Line:23)	Inquary sent by kadu-v
+2023-05-17 16:34:02,768	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
+2023-05-17 16:34:02,771	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5935
+2023-05-17 16:34:02,789	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:34:48,328	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 200 5709
+2023-05-17 16:34:48,341	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:37:37,205	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 200 5709
+2023-05-17 16:37:37,224	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:37:40,855	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
+2023-05-17 16:37:43,126	[INFO]	/workspace/diary/views.py(Line:23)	Inquary sent by kadu-v
+2023-05-17 16:37:43,127	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
+2023-05-17 16:37:43,131	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5935
+2023-05-17 16:37:43,145	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:40:09,278	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
+2023-05-17 16:40:09,287	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:40:10,931	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
+2023-05-17 16:40:10,940	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
+2023-05-17 16:40:10,942	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:40:10,943	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
+2023-05-17 16:40:11,008	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2023-05-17 16:40:11,009	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
+2023-05-17 16:40:20,221	[INFO]	/workspace/diary/views.py(Line:23)	Inquary sent by kadu-v
+2023-05-17 16:40:20,221	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
+2023-05-17 16:40:20,226	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5921
+2023-05-17 16:40:20,249	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:40:33,458	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
+2023-05-17 16:40:33,470	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:40:36,114	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
+2023-05-17 16:40:36,126	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
+2023-05-17 16:40:36,128	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:40:36,129	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
+2023-05-17 16:40:36,197	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2023-05-17 16:40:36,197	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
+2023-05-17 16:40:41,724	[INFO]	/workspace/diary/views.py(Line:23)	Inquary sent by kadu-v
+2023-05-17 16:40:41,725	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
+2023-05-17 16:40:41,730	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5934
+2023-05-17 16:40:41,746	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:41:41,117	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
+2023-05-17 16:41:41,127	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
+2023-05-17 16:41:41,130	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:41:41,130	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
+2023-05-17 16:41:41,268	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2023-05-17 16:41:41,268	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
+2023-05-17 16:41:42,252	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
+2023-05-17 16:41:42,265	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
+2023-05-17 16:41:42,266	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:41:42,267	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
+2023-05-17 16:41:42,335	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2023-05-17 16:41:42,335	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
+2023-05-17 16:41:47,655	[INFO]	/workspace/diary/views.py(Line:23)	Inquary sent by kadu-v
+2023-05-17 16:41:47,655	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
+2023-05-17 16:41:47,658	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5934
+2023-05-17 16:41:47,677	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:43:40,878	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
+2023-05-17 16:43:40,887	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:43:48,916	[INFO]	/workspace/diary/views.py(Line:23)	Inquary sent by kadu-v
+2023-05-17 16:43:48,916	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
+2023-05-17 16:43:48,919	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5947
+2023-05-17 16:43:48,930	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:44:09,910	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
+2023-05-17 16:44:09,933	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
+2023-05-17 16:44:09,935	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:44:09,936	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
+2023-05-17 16:44:10,047	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2023-05-17 16:44:10,047	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
+2023-05-17 16:44:16,882	[INFO]	/workspace/diary/views.py(Line:23)	Inquary sent by kadu-v
+2023-05-17 16:44:16,882	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
+2023-05-17 16:44:16,885	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5947
+2023-05-17 16:44:16,901	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:45:02,295	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
+2023-05-17 16:45:02,311	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
+2023-05-17 16:45:02,314	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-17 16:45:02,315	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
+2023-05-17 16:45:02,457	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2023-05-17 16:45:02,457	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
+2023-05-17 16:45:06,961	[INFO]	/workspace/diary/views.py(Line:23)	Inquary sent by kadu-v
+2023-05-17 16:45:06,961	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
+2023-05-17 16:45:06,965	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5976
+2023-05-17 16:45:06,986	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
