@@ -1,328 +1,1131 @@
-2023-05-17 15:46:46,244	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
-2023-05-17 15:51:23,165	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
-2023-05-17 15:51:36,261	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/diary/views.py changed, reloading.
-2023-05-17 15:51:36,420	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
-2023-05-17 15:51:43,505	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/diary/views.py changed, reloading.
-2023-05-17 15:51:43,674	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
-2023-05-17 15:51:52,101	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5212
-2023-05-17 15:51:52,111	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
-2023-05-17 15:51:52,117	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 304 0
-2023-05-17 15:51:52,121	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/assets/img/01.jpg HTTP/1.1" 200 547797
-2023-05-17 15:51:52,123	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 15:51:52,124	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/assets/img/02.jpg HTTP/1.1" 200 252376
-2023-05-17 15:51:52,127	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/assets/img/03.jpg HTTP/1.1" 200 535000
-2023-05-17 15:51:52,667	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
-2023-05-17 15:51:52,667	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
-2023-05-17 15:51:54,679	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5566
-2023-05-17 15:51:54,689	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 15:52:04,782	[ERROR]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /inquiry
+2023-05-20 20:22:53,565	[ERROR]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /
 Traceback (most recent call last):
   File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
-    return handler(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/django/views/generic/edit.py", line 153, in post
-    return self.form_valid(form)
+  File "/usr/local/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
            ^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/diary/views.py", line 20, in form_valid
-    form.send_emal()
-    ^^^^^^^^^^^^^^
-AttributeError: 'InquiryForm' object has no attribute 'send_emal'
-2023-05-17 15:52:04,783	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 500 76509
-2023-05-17 15:52:33,957	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/diary/views.py changed, reloading.
-2023-05-17 15:52:34,116	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
-2023-05-17 15:52:37,112	[ERROR]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /inquiry
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'accont_logout' not found. 'accont_logout' is not a valid view function or pattern name.
+2023-05-20 20:22:53,566	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 500 139667
+2023-05-20 20:22:55,225	[ERROR]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /
 Traceback (most recent call last):
   File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
-    return handler(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/django/views/generic/edit.py", line 153, in post
-    return self.form_valid(form)
+  File "/usr/local/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
            ^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/diary/views.py", line 20, in form_valid
-    form.send_email()
-    ^^^^^^^^^^^^^^^
-AttributeError: 'InquiryForm' object has no attribute 'send_email'
-2023-05-17 15:52:37,114	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 500 76517
-2023-05-17 15:52:39,561	[ERROR]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /inquiry
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'accont_logout' not found. 'accont_logout' is not a valid view function or pattern name.
+2023-05-20 20:22:55,226	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 500 139804
+2023-05-20 20:23:18,446	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 20:23:18,462	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:23:22,482	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4316
+2023-05-20 20:23:22,500	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:23:25,154	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 20:23:25,157	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4316
+2023-05-20 20:23:25,174	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:23:26,865	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 20:23:26,869	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4316
+2023-05-20 20:23:26,883	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:23:27,659	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 200 4236
+2023-05-20 20:23:27,671	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:23:50,818	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/signup/ HTTP/1.1" 200 4382
+2023-05-20 20:23:50,831	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:24:02,603	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/signup/ HTTP/1.1" 302 0
+2023-05-20 20:24:02,629	[ERROR]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /accounts/confirm-email/
 Traceback (most recent call last):
   File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
-    return handler(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/django/views/generic/edit.py", line 153, in post
-    return self.form_valid(form)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/diary/views.py", line 20, in form_valid
-    form.send_email()
-    ^^^^^^^^^^^^^^^
-AttributeError: 'InquiryForm' object has no attribute 'send_email'
-2023-05-17 15:52:39,562	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 500 76517
-2023-05-17 15:52:43,970	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5212
-2023-05-17 15:52:43,984	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 15:52:46,830	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5212
-2023-05-17 15:52:46,848	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
-2023-05-17 15:52:46,851	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 15:52:46,852	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
-2023-05-17 15:52:46,852	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/assets/img/02.jpg HTTP/1.1" 200 252376
-2023-05-17 15:52:46,853	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/assets/img/01.jpg HTTP/1.1" 200 547797
-2023-05-17 15:52:46,853	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/assets/img/03.jpg HTTP/1.1" 200 535000
-2023-05-17 15:52:46,918	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
-2023-05-17 15:52:46,918	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
-2023-05-17 15:52:47,701	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5566
-2023-05-17 15:52:47,711	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 15:52:52,607	[ERROR]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /inquiry
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 3: 'block'. Looking for one of: endblock.
+2023-05-20 20:24:02,630	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/confirm-email/ HTTP/1.1" 500 156293
+2023-05-20 20:24:36,445	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/confirm-email/ HTTP/1.1" 200 3886
+2023-05-20 20:24:36,454	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:24:45,824	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
 Traceback (most recent call last):
   File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
-    return handler(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/django/views/generic/edit.py", line 153, in post
-    return self.form_valid(form)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/diary/views.py", line 20, in form_valid
-    form.send_email()
-    ^^^^^^^^^^^^^^^
-AttributeError: 'InquiryForm' object has no attribute 'send_email'
-2023-05-17 15:52:52,607	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 500 76516
-2023-05-17 15:53:47,485	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/diary/views.py changed, reloading.
-2023-05-17 15:53:47,652	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
-2023-05-17 15:57:42,771	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/diary/forms.py changed, reloading.
-2023-05-17 15:57:42,947	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
-2023-05-17 15:59:35,402	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/diary/forms.py changed, reloading.
-2023-05-17 15:59:35,576	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
-2023-05-17 15:59:38,648	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/diary/forms.py changed, reloading.
-2023-05-17 15:59:38,807	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
-2023-05-17 15:59:42,605	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5566
-2023-05-17 15:59:42,618	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
-2023-05-17 15:59:42,620	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 15:59:42,620	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
-2023-05-17 15:59:42,680	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
-2023-05-17 15:59:42,680	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
-2023-05-17 15:59:49,124	[ERROR]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /inquiry
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+2023-05-20 20:24:45,836	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /accounts/confirm-email/MQ:1q0Kgs:3mdfJ3db_KpAH_NTIWAawdxvQ_sWTCK_IdBslyw1Mw8/
+2023-05-20 20:24:45,836	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/confirm-email/MQ:1q0Kgs:3mdfJ3db_KpAH_NTIWAawdxvQ_sWTCK_IdBslyw1Mw8/ HTTP/1.1" 400 66962
+2023-05-20 20:24:45,922	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
 Traceback (most recent call last):
   File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
-    return handler(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/django/views/generic/edit.py", line 153, in post
-    return self.form_valid(form)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/diary/views.py", line 20, in form_valid
-    form.send_email()
-  File "/workspace/diary/forms.py", line 37, in send_email
-    message.send()
-  File "/usr/local/lib/python3.11/site-packages/django/core/mail/message.py", line 298, in send
-    return self.get_connection(fail_silently).send_messages([self])
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/django/core/mail/backends/smtp.py", line 127, in send_messages
-    new_conn_created = self.open()
-                       ^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/site-packages/django/core/mail/backends/smtp.py", line 85, in open
-    self.connection = self.connection_class(
-                      ^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/smtplib.py", line 255, in __init__
-    (code, msg) = self.connect(host, port)
-                  ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/smtplib.py", line 341, in connect
-    self.sock = self._get_socket(host, port, self.timeout)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/smtplib.py", line 312, in _get_socket
-    return socket.create_connection((host, port), timeout,
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/socket.py", line 851, in create_connection
-    raise exceptions[0]
-  File "/usr/local/lib/python3.11/socket.py", line 836, in create_connection
-    sock.connect(sa)
-OSError: [Errno 99] Cannot assign requested address
-2023-05-17 15:59:49,126	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 500 117787
-2023-05-17 16:10:39,029	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/private_diary/settings.py changed, reloading.
-2023-05-17 16:15:41,231	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
-2023-05-17 16:16:19,009	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
-2023-05-17 16:16:23,449	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5566
-2023-05-17 16:16:23,464	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:16:23,516	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
-2023-05-17 16:16:23,516	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
-2023-05-17 16:16:30,039	[INFO]	/workspace/diary/views.py(Line:21)	Inquary sent by kadu-v
-2023-05-17 16:16:30,040	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
-2023-05-17 16:16:30,043	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5566
-2023-05-17 16:16:30,055	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:17:35,135	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
-2023-05-17 16:17:59,276	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/private_diary/settings_common.py changed, reloading.
-2023-05-17 16:17:59,436	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
-2023-05-17 16:20:39,491	[INFO]	/workspace/diary/views.py(Line:21)	Inquary sent by kadu-v
-2023-05-17 16:20:39,492	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
-2023-05-17 16:20:39,499	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5566
-2023-05-17 16:20:39,518	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:22:14,340	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/diary/views.py changed, reloading.
-2023-05-17 16:22:14,509	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
-2023-05-17 16:22:52,691	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/diary/views.py changed, reloading.
-2023-05-17 16:22:52,846	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
-2023-05-17 16:32:09,521	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/private_diary/settings_common.py changed, reloading.
-2023-05-17 16:32:09,695	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
-2023-05-17 16:32:16,827	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
-2023-05-17 16:32:16,841	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
-2023-05-17 16:32:16,844	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:32:16,845	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
-2023-05-17 16:32:16,972	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
-2023-05-17 16:32:16,972	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
-2023-05-17 16:32:22,528	[INFO]	/workspace/diary/views.py(Line:23)	Inquary sent by kadu-v
-2023-05-17 16:32:22,529	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
-2023-05-17 16:32:22,532	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
-2023-05-17 16:32:22,543	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:32:42,794	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
-2023-05-17 16:32:42,813	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:32:45,262	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5221
-2023-05-17 16:32:48,883	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5221
-2023-05-17 16:32:48,898	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
-2023-05-17 16:32:48,903	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:32:48,905	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/assets/img/02.jpg HTTP/1.1" 200 252376
-2023-05-17 16:32:48,905	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
-2023-05-17 16:32:48,906	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/assets/img/01.jpg HTTP/1.1" 200 547797
-2023-05-17 16:32:48,906	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/assets/img/03.jpg HTTP/1.1" 200 535000
-2023-05-17 16:32:48,969	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
-2023-05-17 16:32:48,969	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
-2023-05-17 16:32:49,792	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
-2023-05-17 16:32:49,807	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:32:54,123	[INFO]	/workspace/diary/views.py(Line:23)	Inquary sent by kadu-v
-2023-05-17 16:32:54,124	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
-2023-05-17 16:32:54,127	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
-2023-05-17 16:32:54,137	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:33:27,111	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 6068
-2023-05-17 16:33:27,122	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
-2023-05-17 16:33:27,124	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:33:27,125	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
-2023-05-17 16:33:27,264	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
-2023-05-17 16:33:27,264	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
-2023-05-17 16:33:32,895	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
-2023-05-17 16:33:32,907	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:33:33,626	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
-2023-05-17 16:33:33,639	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:33:39,354	[INFO]	/workspace/diary/views.py(Line:23)	Inquary sent by kadu-v
-2023-05-17 16:33:39,355	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
-2023-05-17 16:33:39,358	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5934
-2023-05-17 16:33:39,381	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:33:56,307	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
-2023-05-17 16:33:56,332	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:33:57,035	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
-2023-05-17 16:33:57,047	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:34:02,768	[INFO]	/workspace/diary/views.py(Line:23)	Inquary sent by kadu-v
-2023-05-17 16:34:02,768	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
-2023-05-17 16:34:02,771	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5935
-2023-05-17 16:34:02,789	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:34:48,328	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 200 5709
-2023-05-17 16:34:48,341	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:37:37,205	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 200 5709
-2023-05-17 16:37:37,224	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:37:40,855	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
-2023-05-17 16:37:43,126	[INFO]	/workspace/diary/views.py(Line:23)	Inquary sent by kadu-v
-2023-05-17 16:37:43,127	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
-2023-05-17 16:37:43,131	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5935
-2023-05-17 16:37:43,145	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:40:09,278	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
-2023-05-17 16:40:09,287	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:40:10,931	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
-2023-05-17 16:40:10,940	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
-2023-05-17 16:40:10,942	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:40:10,943	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
-2023-05-17 16:40:11,008	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
-2023-05-17 16:40:11,009	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
-2023-05-17 16:40:20,221	[INFO]	/workspace/diary/views.py(Line:23)	Inquary sent by kadu-v
-2023-05-17 16:40:20,221	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
-2023-05-17 16:40:20,226	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5921
-2023-05-17 16:40:20,249	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:40:33,458	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
-2023-05-17 16:40:33,470	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:40:36,114	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
-2023-05-17 16:40:36,126	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
-2023-05-17 16:40:36,128	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:40:36,129	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
-2023-05-17 16:40:36,197	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
-2023-05-17 16:40:36,197	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
-2023-05-17 16:40:41,724	[INFO]	/workspace/diary/views.py(Line:23)	Inquary sent by kadu-v
-2023-05-17 16:40:41,725	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
-2023-05-17 16:40:41,730	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5934
-2023-05-17 16:40:41,746	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:41:41,117	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
-2023-05-17 16:41:41,127	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
-2023-05-17 16:41:41,130	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:41:41,130	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
-2023-05-17 16:41:41,268	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
-2023-05-17 16:41:41,268	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
-2023-05-17 16:41:42,252	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
-2023-05-17 16:41:42,265	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
-2023-05-17 16:41:42,266	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:41:42,267	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
-2023-05-17 16:41:42,335	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
-2023-05-17 16:41:42,335	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
-2023-05-17 16:41:47,655	[INFO]	/workspace/diary/views.py(Line:23)	Inquary sent by kadu-v
-2023-05-17 16:41:47,655	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
-2023-05-17 16:41:47,658	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5934
-2023-05-17 16:41:47,677	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:43:40,878	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
-2023-05-17 16:43:40,887	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:43:48,916	[INFO]	/workspace/diary/views.py(Line:23)	Inquary sent by kadu-v
-2023-05-17 16:43:48,916	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
-2023-05-17 16:43:48,919	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5947
-2023-05-17 16:43:48,930	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:44:09,910	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
-2023-05-17 16:44:09,933	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
-2023-05-17 16:44:09,935	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:44:09,936	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
-2023-05-17 16:44:10,047	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
-2023-05-17 16:44:10,047	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
-2023-05-17 16:44:16,882	[INFO]	/workspace/diary/views.py(Line:23)	Inquary sent by kadu-v
-2023-05-17 16:44:16,882	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
-2023-05-17 16:44:16,885	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5947
-2023-05-17 16:44:16,901	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:45:02,295	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5575
-2023-05-17 16:45:02,311	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
-2023-05-17 16:45:02,314	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
-2023-05-17 16:45:02,315	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
-2023-05-17 16:45:02,457	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
-2023-05-17 16:45:02,457	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 404 2448
-2023-05-17 16:45:06,961	[INFO]	/workspace/diary/views.py(Line:23)	Inquary sent by kadu-v
-2023-05-17 16:45:06,961	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /inquiry HTTP/1.1" 302 0
-2023-05-17 16:45:06,965	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5976
-2023-05-17 16:45:06,986	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+2023-05-20 20:24:45,931	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /favicon.ico
+2023-05-20 20:24:45,931	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 400 66139
+2023-05-20 20:25:11,105	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/confirm-email/MQ:1q0Kgs:3mdfJ3db_KpAH_NTIWAawdxvQ_sWTCK_IdBslyw1Mw8/ HTTP/1.1" 200 3599
+2023-05-20 20:25:11,121	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:25:12,950	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/confirm-email/MQ:1q0Khz:VjYFw1HvwGO3_d2UUsfnXHMdY4a1n4-FmShKCRWtyOY/ HTTP/1.1" 302 0
+2023-05-20 20:25:12,957	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4723
+2023-05-20 20:25:12,967	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:25:29,171	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4540
+2023-05-20 20:25:29,184	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:25:44,831	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4541
+2023-05-20 20:25:44,842	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:25:55,950	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4541
+2023-05-20 20:25:55,959	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:26:25,308	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4541
+2023-05-20 20:26:25,321	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:26:29,588	[ERROR]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /accounts/password/reset/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/defaulttags.py", line 1372, in url
+    viewname = parser.compile_filter(bits[1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: 'account_reset_password' from '''account_reset_password'
+2023-05-20 20:26:29,589	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/password/reset/ HTTP/1.1" 500 177956
+2023-05-20 20:27:02,009	[ERROR]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /accounts/password/reset/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'end'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 29: 'end', expected 'endblock'. Did you forget to register or load this tag?
+2023-05-20 20:27:02,010	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/password/reset/ HTTP/1.1" 500 164444
+2023-05-20 20:27:02,674	[ERROR]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /accounts/password/reset/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'end'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 29: 'end', expected 'endblock'. Did you forget to register or load this tag?
+2023-05-20 20:27:02,676	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/password/reset/ HTTP/1.1" 500 164444
+2023-05-20 20:27:08,165	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/password/reset/ HTTP/1.1" 200 3835
+2023-05-20 20:27:08,177	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:27:14,796	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/password/reset/ HTTP/1.1" 302 0
+2023-05-20 20:27:14,803	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/password/reset/done/ HTTP/1.1" 200 3214
+2023-05-20 20:27:14,814	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:27:29,527	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/password/reset/key/1-boim5e-0f8ed31b9eb4619d09c7155bdc4bf343/ HTTP/1.1" 302 0
+2023-05-20 20:27:29,536	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/password/reset/key/1-set-password/ HTTP/1.1" 200 4098
+2023-05-20 20:27:29,549	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:27:46,808	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/password/reset/key/1-set-password/ HTTP/1.1" 200 4229
+2023-05-20 20:27:46,822	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:28:04,473	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/password/reset/key/1-set-password/ HTTP/1.1" 200 4209
+2023-05-20 20:28:04,484	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:28:15,993	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/password/reset/key/1-set-password/ HTTP/1.1" 200 4209
+2023-05-20 20:28:16,004	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:28:33,278	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/password/reset/key/1-set-password/ HTTP/1.1" 302 0
+2023-05-20 20:28:33,281	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/password/reset/key/done/ HTTP/1.1" 200 3626
+2023-05-20 20:28:33,293	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:28:37,181	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4316
+2023-05-20 20:28:37,195	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:28:44,146	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4533
+2023-05-20 20:28:44,162	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:28:58,175	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4533
+2023-05-20 20:28:58,186	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:29:03,702	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 20:29:03,722	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:29:06,624	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin HTTP/1.1" 301 0
+2023-05-20 20:29:06,634	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/ HTTP/1.1" 302 0
+2023-05-20 20:29:06,646	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4301
+2023-05-20 20:29:06,663	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+2023-05-20 20:29:06,663	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/css/login.css HTTP/1.1" 200 958
+2023-05-20 20:29:06,663	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+2023-05-20 20:29:06,663	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/css/base.css HTTP/1.1" 200 21207
+2023-05-20 20:29:06,663	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+2023-05-20 20:29:06,664	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/css/responsive.css HTTP/1.1" 200 18533
+2023-05-20 20:29:06,665	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+2023-05-20 20:29:15,244	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4527
+2023-05-20 20:29:57,194	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4529
+2023-05-20 20:30:04,964	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4527
+2023-05-20 20:31:44,016	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-20 20:31:58,636	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+2023-05-20 20:31:58,648	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /accounts/confirm-email/MQ:1q0Kgs:3mdfJ3db_KpAH_NTIWAawdxvQ_sWTCK_IdBslyw1Mw8/
+2023-05-20 20:31:58,648	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/confirm-email/MQ:1q0Kgs:3mdfJ3db_KpAH_NTIWAawdxvQ_sWTCK_IdBslyw1Mw8/ HTTP/1.1" 400 67099
+2023-05-20 20:31:58,701	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+2023-05-20 20:31:58,711	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /favicon.ico
+2023-05-20 20:31:58,711	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 400 66139
+2023-05-20 20:31:59,310	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+2023-05-20 20:31:59,320	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /accounts/confirm-email/MQ:1q0Kgs:3mdfJ3db_KpAH_NTIWAawdxvQ_sWTCK_IdBslyw1Mw8/
+2023-05-20 20:31:59,320	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/confirm-email/MQ:1q0Kgs:3mdfJ3db_KpAH_NTIWAawdxvQ_sWTCK_IdBslyw1Mw8/ HTTP/1.1" 400 67099
+2023-05-20 20:31:59,398	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+2023-05-20 20:31:59,413	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /favicon.ico
+2023-05-20 20:31:59,413	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 400 66139
+2023-05-20 20:32:07,901	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 20:32:07,917	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:32:09,866	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4316
+2023-05-20 20:32:09,882	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:32:17,811	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4533
+2023-05-20 20:32:17,823	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:32:21,895	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 200 4236
+2023-05-20 20:32:21,909	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:32:43,934	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/signup/ HTTP/1.1" 302 0
+2023-05-20 20:32:43,937	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/confirm-email/ HTTP/1.1" 200 3885
+2023-05-20 20:32:43,947	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:32:52,307	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/confirm-email/Mg:1q0KpH:KzEuD0f48NGr2Xi9eeEelczRobMz5HRtXyhuWgtO3CM/ HTTP/1.1" 200 3599
+2023-05-20 20:32:52,322	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:32:53,422	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/confirm-email/Mg:1q0KpQ:MVJtK9yCrPtY0cxchyKlnD5KjIJQjUUHQR12p87TapU/ HTTP/1.1" 302 0
+2023-05-20 20:32:53,430	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4722
+2023-05-20 20:32:53,441	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:33:08,890	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4532
+2023-05-20 20:33:08,899	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:33:21,473	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4540
+2023-05-20 20:33:21,484	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:34:43,303	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-20 20:34:43,711	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4301
+2023-05-20 20:34:47,783	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2023-05-20 20:34:47,797	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/ HTTP/1.1" 200 7350
+2023-05-20 20:34:47,808	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+2023-05-20 20:34:47,857	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2023-05-20 20:34:47,857	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2023-05-20 20:38:15,774	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/account/emailaddress/ HTTP/1.1" 200 12120
+2023-05-20 20:38:15,787	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/css/changelists.css HTTP/1.1" 200 6584
+2023-05-20 20:38:15,788	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2023-05-20 20:38:15,788	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+2023-05-20 20:38:15,788	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/js/core.js HTTP/1.1" 200 5682
+2023-05-20 20:38:15,789	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+2023-05-20 20:38:15,791	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/jsi18n/ HTTP/1.1" 200 9739
+2023-05-20 20:38:15,791	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+2023-05-20 20:38:15,791	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+2023-05-20 20:38:15,793	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2023-05-20 20:38:15,794	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2023-05-20 20:38:15,796	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+2023-05-20 20:38:15,801	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+2023-05-20 20:38:15,806	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2023-05-20 20:38:15,809	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2023-05-20 20:38:30,164	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/sites/site/ HTTP/1.1" 200 10524
+2023-05-20 20:38:30,184	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/jsi18n/ HTTP/1.1" 200 9739
+2023-05-20 20:38:30,197	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+2023-05-20 20:38:32,891	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/auth/group/ HTTP/1.1" 200 8869
+2023-05-20 20:38:32,909	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/jsi18n/ HTTP/1.1" 200 9739
+2023-05-20 20:38:34,074	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/account/emailaddress/ HTTP/1.1" 200 12120
+2023-05-20 20:38:34,091	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/jsi18n/ HTTP/1.1" 200 9739
+2023-05-20 20:38:34,645	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/accounts/customuser/ HTTP/1.1" 200 10197
+2023-05-20 20:38:34,661	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/jsi18n/ HTTP/1.1" 200 9739
+2023-05-20 20:38:36,332	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/accounts/customuser/2/change/ HTTP/1.1" 200 22162
+2023-05-20 20:38:36,348	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/css/forms.css HTTP/1.1" 200 8953
+2023-05-20 20:38:36,349	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+2023-05-20 20:38:36,349	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+2023-05-20 20:38:36,353	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/jsi18n/ HTTP/1.1" 200 9739
+2023-05-20 20:38:36,355	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+2023-05-20 20:38:36,391	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+2023-05-20 20:38:36,391	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/css/widgets.css HTTP/1.1" 200 11900
+2023-05-20 20:38:36,449	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+2023-05-20 20:38:36,449	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+2023-05-20 20:39:05,280	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 302 0
+2023-05-20 20:39:05,285	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 20:39:05,298	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:39:06,959	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 302 0
+2023-05-20 20:39:06,961	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 20:39:06,974	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:39:09,798	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 302 0
+2023-05-20 20:39:09,801	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 20:39:09,814	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:39:10,559	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 302 0
+2023-05-20 20:39:10,562	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 20:39:10,592	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:39:15,777	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 302 0
+2023-05-20 20:39:15,779	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 20:39:15,791	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:39:16,479	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 302 0
+2023-05-20 20:39:16,482	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 20:39:16,495	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:39:23,054	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 20:39:23,066	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:39:24,152	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 20:39:24,165	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:39:24,930	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5688
+2023-05-20 20:39:24,939	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:39:25,802	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 20:39:25,817	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:39:26,473	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 302 0
+2023-05-20 20:39:26,475	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 20:39:26,484	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:39:27,366	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 302 0
+2023-05-20 20:39:27,368	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 20:39:27,380	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:39:28,003	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 20:39:28,007	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4711
+2023-05-20 20:39:28,018	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:39:32,449	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 20:39:32,453	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4316
+2023-05-20 20:39:32,464	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:39:33,935	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4316
+2023-05-20 20:39:33,950	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:39:34,650	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4316
+2023-05-20 20:39:34,662	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:39:35,407	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 200 4236
+2023-05-20 20:39:35,423	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:39:35,802	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 20:39:35,804	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4316
+2023-05-20 20:39:35,819	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:39:36,662	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 20:39:36,665	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4316
+2023-05-20 20:39:36,674	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:39:37,255	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4316
+2023-05-20 20:39:37,266	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:39:50,135	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4532
+2023-05-20 20:39:50,146	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:39:55,703	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4532
+2023-05-20 20:39:55,713	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:39:58,966	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 20:39:58,980	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:40:00,227	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 20:40:00,229	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4316
+2023-05-20 20:40:00,242	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:40:02,177	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 20:40:02,180	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4316
+2023-05-20 20:40:02,194	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:40:03,492	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 200 4236
+2023-05-20 20:40:03,506	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:40:05,051	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4316
+2023-05-20 20:40:05,068	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:40:05,612	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 20:40:05,616	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4316
+2023-05-20 20:40:05,627	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:40:06,326	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 200 4236
+2023-05-20 20:40:06,341	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:40:07,038	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4316
+2023-05-20 20:40:07,049	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:40:07,582	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 200 4236
+2023-05-20 20:40:07,600	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:40:08,201	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 20:40:08,205	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4316
+2023-05-20 20:40:08,219	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:40:09,361	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 200 4236
+2023-05-20 20:40:09,380	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:40:10,540	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 20:40:10,543	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4316
+2023-05-20 20:40:10,557	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:40:14,219	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4316
+2023-05-20 20:40:14,243	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:40:14,744	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 200 4236
+2023-05-20 20:40:14,760	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:40:15,254	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 20:40:15,257	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4316
+2023-05-20 20:40:15,268	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:40:57,361	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 20:40:57,364	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4316
+2023-05-20 20:40:57,376	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:41:27,876	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4532
+2023-05-20 20:41:27,901	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:41:38,881	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 20:41:38,902	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:41:40,423	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 20:41:40,425	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4316
+2023-05-20 20:41:40,445	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:41:41,933	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 20:41:41,935	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4316
+2023-05-20 20:41:41,948	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:41:43,139	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 200 4236
+2023-05-20 20:41:43,151	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:41:43,949	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 200 4236
+2023-05-20 20:41:43,961	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:41:44,873	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4316
+2023-05-20 20:41:44,887	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:41:54,675	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4532
+2023-05-20 20:41:54,685	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:42:11,776	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 200 4236
+2023-05-20 20:42:11,799	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:42:40,627	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/signup/ HTTP/1.1" 302 0
+2023-05-20 20:42:40,629	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/confirm-email/ HTTP/1.1" 200 3896
+2023-05-20 20:42:40,644	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:42:47,011	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-20 20:42:52,804	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/confirm-email/Mw:1q0Kyu:p2RdkJSseotqxkW5LYUA92oyD2np5MP4pdtmY8WPSLI/ HTTP/1.1" 200 3599
+2023-05-20 20:42:52,820	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:42:54,677	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/confirm-email/Mw:1q0Kz6:dR60FXmWKwoiCXHx1bmivkUeLsd9hTqA7gLA8-k_12I/ HTTP/1.1" 302 0
+2023-05-20 20:42:54,686	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4733
+2023-05-20 20:42:54,694	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:43:20,006	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4543
+2023-05-20 20:43:20,017	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:43:25,014	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4543
+2023-05-20 20:43:25,033	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:43:46,939	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/accounts/customuser/2/change/ HTTP/1.1" 302 0
+2023-05-20 20:43:46,951	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/login/?next=/admin/accounts/customuser/2/change/ HTTP/1.1" 200 4359
+2023-05-20 20:43:52,010	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /admin/login/?next=/admin/accounts/customuser/2/change/ HTTP/1.1" 302 0
+2023-05-20 20:43:52,047	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/accounts/customuser/2/change/ HTTP/1.1" 200 22162
+2023-05-20 20:43:52,060	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/jsi18n/ HTTP/1.1" 200 9739
+2023-05-20 20:43:56,057	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/accounts/customuser/ HTTP/1.1" 200 10415
+2023-05-20 20:43:56,071	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/jsi18n/ HTTP/1.1" 200 9739
+2023-05-20 20:43:59,426	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/accounts/customuser/4/change/ HTTP/1.1" 200 22209
+2023-05-20 20:43:59,441	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/jsi18n/ HTTP/1.1" 200 9739
+2023-05-20 20:58:13,949	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-20 20:58:18,359	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+2023-05-20 20:58:18,372	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /accounts/confirm-email/MQ:1q0Kgs:3mdfJ3db_KpAH_NTIWAawdxvQ_sWTCK_IdBslyw1Mw8/
+2023-05-20 20:58:18,372	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/confirm-email/MQ:1q0Kgs:3mdfJ3db_KpAH_NTIWAawdxvQ_sWTCK_IdBslyw1Mw8/ HTTP/1.1" 400 67099
+2023-05-20 20:58:18,455	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+2023-05-20 20:58:18,465	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /favicon.ico
+2023-05-20 20:58:18,465	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 400 66139
+2023-05-20 20:58:19,214	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+2023-05-20 20:58:19,224	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /accounts/confirm-email/MQ:1q0Kgs:3mdfJ3db_KpAH_NTIWAawdxvQ_sWTCK_IdBslyw1Mw8/
+2023-05-20 20:58:19,224	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/confirm-email/MQ:1q0Kgs:3mdfJ3db_KpAH_NTIWAawdxvQ_sWTCK_IdBslyw1Mw8/ HTTP/1.1" 400 67099
+2023-05-20 20:58:19,279	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+2023-05-20 20:58:19,290	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /favicon.ico
+2023-05-20 20:58:19,290	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 400 66139
+2023-05-20 20:58:25,441	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/confirm-email/ HTTP/1.1" 200 3467
+2023-05-20 20:58:25,459	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:58:26,452	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/confirm-email/ HTTP/1.1" 200 3467
+2023-05-20 20:58:26,464	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:58:30,696	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 20:58:30,710	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:58:39,483	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 200 4236
+2023-05-20 20:58:39,499	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:58:53,275	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/signup/ HTTP/1.1" 200 4389
+2023-05-20 20:58:53,290	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:59:28,821	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/signup/ HTTP/1.1" 302 0
+2023-05-20 20:59:28,823	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/confirm-email/ HTTP/1.1" 200 3896
+2023-05-20 20:59:28,834	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:59:34,426	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+2023-05-20 20:59:34,437	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /accounts/confirm-email/MQ:1q0LFA:rVRMok0L9EcI3xCwU2PyWVypP5wggKeMGHwzA4WSyrk/
+2023-05-20 20:59:34,437	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/confirm-email/MQ:1q0LFA:rVRMok0L9EcI3xCwU2PyWVypP5wggKeMGHwzA4WSyrk/ HTTP/1.1" 400 66962
+2023-05-20 20:59:34,522	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+2023-05-20 20:59:34,531	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /favicon.ico
+2023-05-20 20:59:34,532	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /favicon.ico HTTP/1.1" 400 66139
+2023-05-20 20:59:41,709	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/confirm-email/MQ:1q0LFA:rVRMok0L9EcI3xCwU2PyWVypP5wggKeMGHwzA4WSyrk/ HTTP/1.1" 200 3599
+2023-05-20 20:59:41,722	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 20:59:43,863	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/confirm-email/MQ:1q0LFN:Bnf2uopnTc9gbmoF1GtY_qSTFt6cecRjzBoe20O788s/ HTTP/1.1" 302 0
+2023-05-20 20:59:43,871	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4733
+2023-05-20 20:59:43,882	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:01:21,812	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:01:21,829	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:01:26,784	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /accounts/confirm-email/MQ:1q0LFN:Bnf2uopnTc9gbmoF1GtY_qSTFt6cecRjzBoe20O788s/
+2023-05-20 21:01:26,784	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/confirm-email/MQ:1q0LFN:Bnf2uopnTc9gbmoF1GtY_qSTFt6cecRjzBoe20O788s/ HTTP/1.1" 404 4944
+2023-05-20 21:01:29,979	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:01:29,992	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:01:50,733	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4549
+2023-05-20 21:01:50,745	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:02:20,195	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/password/reset/ HTTP/1.1" 200 3835
+2023-05-20 21:02:20,207	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:02:23,797	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/password/reset/ HTTP/1.1" 302 0
+2023-05-20 21:02:23,803	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/password/reset/done/ HTTP/1.1" 200 3214
+2023-05-20 21:02:23,823	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:02:38,217	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/password/reset/key/1-boinrz-5a881012d075dce27858d8eca3f651bb/ HTTP/1.1" 302 0
+2023-05-20 21:02:38,226	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/password/reset/key/1-set-password/ HTTP/1.1" 200 4098
+2023-05-20 21:02:38,241	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:02:46,443	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/password/reset/key/1-set-password/ HTTP/1.1" 302 0
+2023-05-20 21:02:46,446	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/password/reset/key/done/ HTTP/1.1" 200 3626
+2023-05-20 21:02:46,458	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:02:49,387	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:02:49,403	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:02:59,790	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4549
+2023-05-20 21:02:59,808	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:03:06,005	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4549
+2023-05-20 21:03:06,019	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:03:27,381	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4549
+2023-05-20 21:03:27,401	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:03:30,247	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4549
+2023-05-20 21:03:30,261	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:03:30,876	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:03:30,888	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:03:32,339	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:03:32,351	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:03:32,935	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:03:32,950	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:03:34,084	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:03:34,099	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:03:39,854	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4549
+2023-05-20 21:03:39,869	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:06:47,185	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/private_diary/settings_common.py changed, reloading.
+2023-05-20 21:06:47,375	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-20 21:07:08,612	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/private_diary/settings_common.py changed, reloading.
+2023-05-20 21:07:08,791	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-20 21:08:28,476	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/private_diary/settings_common.py changed, reloading.
+2023-05-20 21:08:28,639	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-20 21:09:37,360	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/accounts/apps.py changed, reloading.
+2023-05-20 21:09:37,538	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-20 21:10:13,368	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-20 21:10:21,349	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4301
+2023-05-20 21:10:24,319	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4527
+2023-05-20 21:11:05,591	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-05-20 21:11:08,514	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4526
+2023-05-20 21:11:11,418	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2023-05-20 21:11:11,431	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/ HTTP/1.1" 200 7349
+2023-05-20 21:11:15,914	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/accounts/customuser/add/ HTTP/1.1" 200 21844
+2023-05-20 21:11:15,934	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/jsi18n/ HTTP/1.1" 200 9739
+2023-05-20 21:11:36,583	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /admin/accounts/customuser/add/ HTTP/1.1" 302 0
+2023-05-20 21:11:36,603	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/accounts/customuser/ HTTP/1.1" 200 10420
+2023-05-20 21:11:36,622	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/jsi18n/ HTTP/1.1" 200 9739
+2023-05-20 21:11:42,193	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:11:42,214	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:11:43,971	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 302 0
+2023-05-20 21:11:43,973	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:11:43,989	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:11:45,443	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 302 0
+2023-05-20 21:11:45,445	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:11:45,462	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:11:46,429	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 302 0
+2023-05-20 21:11:46,430	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:11:46,438	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:11:49,943	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /login
+2023-05-20 21:11:49,943	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /login HTTP/1.1" 404 2539
+2023-05-20 21:11:54,733	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:11:54,756	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:11:56,377	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 302 0
+2023-05-20 21:11:56,380	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:11:56,392	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:11:56,832	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 302 0
+2023-05-20 21:11:56,834	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:11:56,844	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:11:57,011	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 302 0
+2023-05-20 21:11:57,014	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:11:57,030	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:11:57,176	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 302 0
+2023-05-20 21:11:57,178	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:11:57,191	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:11:57,335	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 302 0
+2023-05-20 21:11:57,337	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:11:57,348	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:11:57,487	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 302 0
+2023-05-20 21:11:57,489	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:11:57,499	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:11:57,637	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 302 0
+2023-05-20 21:11:57,639	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:11:57,653	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:11:58,057	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 302 0
+2023-05-20 21:11:58,059	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:11:58,072	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:11:58,232	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 302 0
+2023-05-20 21:11:58,234	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:11:58,247	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:11:58,669	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 21:11:58,673	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4717
+2023-05-20 21:11:58,684	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:11:58,844	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 21:11:58,848	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:11:58,861	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:11:59,007	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 21:11:59,010	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:11:59,024	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:11:59,987	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:11:59,998	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:12:08,040	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4549
+2023-05-20 21:12:08,056	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:12:13,864	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4549
+2023-05-20 21:12:13,874	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:12:38,481	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4301
+2023-05-20 21:12:43,699	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2023-05-20 21:12:43,709	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/ HTTP/1.1" 200 7677
+2023-05-20 21:12:46,833	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/accounts/customuser/ HTTP/1.1" 200 10204
+2023-05-20 21:12:46,850	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/jsi18n/ HTTP/1.1" 200 9739
+2023-05-20 21:12:54,278	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/accounts/customuser/1/change/ HTTP/1.1" 200 22208
+2023-05-20 21:12:54,299	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/jsi18n/ HTTP/1.1" 200 9739
+2023-05-20 21:12:56,002	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/accounts/customuser/ HTTP/1.1" 200 10204
+2023-05-20 21:12:57,224	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/accounts/customuser/3/change/ HTTP/1.1" 200 22095
+2023-05-20 21:12:57,242	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/jsi18n/ HTTP/1.1" 200 9739
+2023-05-20 21:13:03,220	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/accounts/customuser/ HTTP/1.1" 200 10204
+2023-05-20 21:13:04,096	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/accounts/customuser/2/change/ HTTP/1.1" 200 22195
+2023-05-20 21:13:04,113	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/jsi18n/ HTTP/1.1" 200 9739
+2023-05-20 21:13:12,114	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 302 0
+2023-05-20 21:13:12,116	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:13:12,140	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:13:12,943	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 302 0
+2023-05-20 21:13:12,946	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:13:12,959	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:13:19,689	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 21:13:19,694	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4717
+2023-05-20 21:13:19,707	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:13:21,840	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:13:21,854	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:13:31,671	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4549
+2023-05-20 21:13:31,686	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:13:33,441	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 200 4236
+2023-05-20 21:13:33,450	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:13:34,635	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 21:13:34,639	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:13:34,653	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:13:35,911	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:13:35,922	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:13:43,255	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:13:43,273	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:13:46,290	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 21:13:46,294	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:13:46,307	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:13:48,142	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 200 4236
+2023-05-20 21:13:48,157	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:13:49,580	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 21:13:49,584	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:13:49,595	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:13:50,162	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:13:50,173	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:13:51,065	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 21:13:51,068	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:13:51,078	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:13:51,617	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 200 4236
+2023-05-20 21:13:51,630	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:13:52,268	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 21:13:52,272	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:13:52,281	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:14:03,365	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4549
+2023-05-20 21:14:03,378	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:14:05,665	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:14:05,677	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:14:06,886	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 21:14:06,889	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:14:06,900	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:14:07,634	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 21:14:07,637	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:14:07,649	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:14:08,423	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 200 4236
+2023-05-20 21:14:08,439	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:14:09,048	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:14:09,062	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:14:09,562	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:14:09,573	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:14:10,145	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 200 4236
+2023-05-20 21:14:10,160	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:14:10,489	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 21:14:10,492	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:14:10,506	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:14:11,406	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:14:11,421	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:14:11,749	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 21:14:11,752	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:14:11,761	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:14:13,726	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:14:13,741	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:14:14,395	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:14:14,404	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:14:25,081	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4549
+2023-05-20 21:14:25,092	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:14:27,386	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /inquiry HTTP/1.1" 200 5688
+2023-05-20 21:14:27,399	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:14:28,546	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:14:28,558	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:14:30,806	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 200 4236
+2023-05-20 21:14:30,821	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:14:31,406	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:14:31,421	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:14:32,023	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 21:14:32,026	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:14:32,048	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:14:32,659	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 21:14:32,662	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:14:32,673	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:14:46,932	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/accounts/customuser/2/change/ HTTP/1.1" 302 0
+2023-05-20 21:14:46,939	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /admin/login/?next=/admin/accounts/customuser/2/change/ HTTP/1.1" 200 4359
+2023-05-20 21:14:59,972	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:14:59,990	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:15:01,430	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:15:01,446	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:15:27,143	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4555
+2023-05-20 21:15:27,170	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:15:34,875	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 21:15:34,879	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:15:34,910	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:15:36,382	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 200 4236
+2023-05-20 21:15:36,405	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:15:37,298	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4322
+2023-05-20 21:15:37,317	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:15:38,651	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 200 4236
+2023-05-20 21:15:38,668	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:15:58,822	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/signup/ HTTP/1.1" 302 0
+2023-05-20 21:15:58,825	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/confirm-email/ HTTP/1.1" 200 3898
+2023-05-20 21:15:58,847	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:16:07,585	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/confirm-email/Mg:1q0LV8:7NxTK1REt-CoqUy-BLbDXLpgf40FKNHTvbKYkRfaSz4/ HTTP/1.1" 200 3599
+2023-05-20 21:16:07,602	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:16:09,401	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/confirm-email/Mg:1q0LVH:3nheP0fp2048pq98Fdq9NvgjQGgqWfde8yKiPY4NwUs/ HTTP/1.1" 302 0
+2023-05-20 21:16:09,408	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4741
+2023-05-20 21:16:09,420	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:16:21,996	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 302 0
+2023-05-20 21:16:21,999	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5777
+2023-05-20 21:16:22,012	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:16:27,515	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 302 0
+2023-05-20 21:16:27,517	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:16:27,526	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:16:30,242	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 302 0
+2023-05-20 21:16:30,244	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5349
+2023-05-20 21:16:30,256	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:16:34,418	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 21:16:34,421	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4717
+2023-05-20 21:16:34,433	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:16:43,151	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 302 0
+2023-05-20 21:16:43,154	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5777
+2023-05-20 21:16:43,164	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:16:49,761	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-05-20 21:16:49,764	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4717
+2023-05-20 21:16:49,775	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:16:57,265	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4555
+2023-05-20 21:16:57,277	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-05-20 21:17:03,553	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4555
+2023-05-20 21:17:03,565	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837

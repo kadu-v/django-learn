@@ -14,6 +14,8 @@ from pathlib import Path
 import os
 from django.contrib.messages import constants as messages
 
+
+
 MESSAGE_TAGS = {
     messages.ERROR: 'alert alert-danger',
     messages.WARNING: 'alert alert-warning',
@@ -33,8 +35,6 @@ STATICFILES_DIRS = (
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -45,7 +45,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'diary.apps.DiaryConfig'
+    'diary.apps.DiaryConfig',
+    'accounts.apps.AccountsConfig',
+
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'django_bootstrap5'
 ]
 
 MIDDLEWARE = [
@@ -104,9 +110,6 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-    },
-    {
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
@@ -140,3 +143,34 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+# ユーザー認証
+AUTH_USER_MODEL = 'accounts.CustomUser'
+
+# django allauth で利用する django.contrib.sitesを使うためにサイト識別用IDを設定する
+SITE_ID = 1
+
+AUTHENTICATION_BACKENDS = (
+    'allauth.account.auth_backends.AuthenticationBackend',
+    'django.contrib.auth.backends.ModelBackend'
+)
+
+# メールアドレス認証に変更する設定
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_USERNAME_REQUIRED = False
+
+# サインアップにメールアドレス確認を挟むよう設定
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_EMAIL_REQUIRED = True
+
+# ログイン/ログアウト後の遷移先を設定
+LOGIN_REDIRECT_URL = 'diary:index'
+ACCOUNT_LOGOUT_REDIRECT_URL = 'account_login'
+
+# ログアウトリンクの一発クリックでログアウトする設定
+ACCOUNT_LOGOUT_ON_GET = True
+
+# django-allauthが送信するメールの件名に自動付与される接頭辞をブランクにする設定
+ACCOUNT_EMAIL_SUBJECT_PREFIX = ''
+
+# デフォルトのメール送信元を設定
+DEFAULT_FROM_EMAIL = os.environ.get('FROM_EMAIL')
