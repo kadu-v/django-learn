@@ -3,7 +3,7 @@
     "dockerComposeFile": [
         "./docker-compose.dev.yaml"
     ],
-    "service": "dev_web",
+    "service": "app",
     "workspaceFolder": "/workspace",
     "customizations": {
         "vscode": {

@@ -1,19 +1,29 @@
 version: "3"
 
 services:
+  selenium:
+    image: selenium/standalone-chrome:4.1.4-20220427
+    ports:
+      - 4444:4444
+      - 7900:7900
+    volumes:
+      - /dev/shm:/dev/shm
+
   dev_db:
     image: postgres
     environment:
       - "POSTGRES_USER=postgres"
       - "POSTGRES_PASSWORD=postgres"
+      - "ALLOWED_HOSTS=dev_web"
 
-  dev_web:
+  app:
     build:
       context: ../
       dockerfile: Dockerfile
     command: sleep infinity
     environment:
       - "DJANGO_SETTINGS_MODULE=private_diary.settings_dev"
+      - "SELENIUM_URL=http://selenium:4444/wd/hub"
     volumes:
       - ..:/workspace
     ports:

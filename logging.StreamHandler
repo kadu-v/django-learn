@@ -466,3 +466,711 @@ KeyError: 'pk'
 2023-06-04 20:00:08,616	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /diary-list HTTP/1.1" 200 4163
 2023-06-04 20:00:08,629	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/clean-blog.min.css HTTP/1.1" 404 1825
 2023-06-04 20:00:08,629	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-06-04 20:19:59,024	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 20:19:59,475	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 20:30:14,325	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 20:30:14,771	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 20:47:46,792	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-06-04 20:55:15,328	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 20:55:15,781	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 20:59:48,253	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 20:59:48,705	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:03:15,814	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-06-04 21:03:20,258	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:03:20,710	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:05:07,579	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:05:08,029	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:07:41,568	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:07:42,017	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:07:56,301	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:07:56,744	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:08:07,063	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:08:07,510	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:08:30,705	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-06-04 21:08:36,153	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:08:36,611	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:09:52,251	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:09:52,706	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:10:20,461	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:10:20,913	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:12:07,680	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:12:08,127	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:17:07,207	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:17:07,657	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:17:19,375	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:17:19,827	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:18:02,697	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:18:03,152	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:18:59,813	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:19:00,262	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:19:51,634	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:19:52,084	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:20:49,467	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:20:49,912	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:21:55,199	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:21:55,650	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:23:03,706	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:23:04,163	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:33:46,143	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:33:46,588	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:35:00,262	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:35:00,718	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:37:40,982	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-06-04 21:38:01,368	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-06-04 21:38:03,970	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5580
+2023-06-04 21:38:04,009	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-06-04 21:38:04,011	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/assets/img/01.jpg HTTP/1.1" 200 547797
+2023-06-04 21:38:04,011	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/assets/img/03.jpg HTTP/1.1" 200 535000
+2023-06-04 21:38:07,579	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 21:38:07,590	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /accounts
+2023-06-04 21:38:07,590	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts HTTP/1.1" 400 65213
+2023-06-04 21:38:12,881	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:38:13,338	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:38:13,668	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 21:38:13,678	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /accounts/login/
+2023-06-04 21:38:13,679	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 400 66309
+2023-06-04 21:38:24,007	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:38:24,457	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:38:24,788	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 21:38:24,798	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /accounts/login/
+2023-06-04 21:38:24,798	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 400 66309
+2023-06-04 21:40:54,281	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:40:54,731	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:40:55,067	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 21:40:55,077	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /accounts/login/
+2023-06-04 21:40:55,077	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 400 66309
+2023-06-04 21:41:27,470	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 302 0
+2023-06-04 21:41:27,478	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /diary-list HTTP/1.1" 200 3744
+2023-06-04 21:41:27,493	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/clean-blog.min.css HTTP/1.1" 404 1825
+2023-06-04 21:41:27,493	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-06-04 21:41:29,468	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/logout/ HTTP/1.1" 302 0
+2023-06-04 21:41:29,476	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4742
+2023-06-04 21:41:29,488	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-06-04 21:41:32,708	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:41:33,156	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:41:33,496	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 21:41:33,506	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /accounts/login/
+2023-06-04 21:41:33,507	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 400 66309
+2023-06-04 21:42:40,031	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 200 4261
+2023-06-04 21:42:40,046	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-06-04 21:47:15,798	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:47:16,242	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:47:16,568	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 21:47:16,577	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /accounts/login/
+2023-06-04 21:47:16,578	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 400 66309
+2023-06-04 21:50:16,904	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:50:17,351	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 21:50:17,675	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 21:50:17,684	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /accounts/login/
+2023-06-04 21:50:17,684	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 400 66309
+2023-06-04 21:50:56,743	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 21:50:56,752	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2023-06-04 21:50:56,752	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 400 65212
+2023-06-04 21:51:12,250	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 21:51:12,259	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2023-06-04 21:51:12,259	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 400 65212
+2023-06-04 21:52:26,440	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4347
+2023-06-04 21:52:26,451	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-06-04 21:52:37,461	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 21:52:37,475	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /account/login
+2023-06-04 21:52:37,475	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /account/login HTTP/1.1" 400 65268
+2023-06-04 21:52:40,103	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 21:52:40,112	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /account/login
+2023-06-04 21:52:40,112	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /account/login HTTP/1.1" 400 65268
+2023-06-04 21:59:50,414	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 21:59:50,872	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:02:57,738	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-06-04 22:03:05,747	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:03:06,194	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:03:06,527	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 22:03:06,539	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /accounts/login/
+2023-06-04 22:03:06,540	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 400 66437
+2023-06-04 22:03:53,342	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/private_diary/settings_dev.py changed, reloading.
+2023-06-04 22:03:53,521	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-06-04 22:04:08,738	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/private_diary/settings_dev.py changed, reloading.
+2023-06-04 22:04:08,911	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-06-04 22:04:11,894	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:04:12,346	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:04:12,677	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 22:04:12,690	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /accounts/login/
+2023-06-04 22:04:12,690	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 400 66411
+2023-06-04 22:04:22,732	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:04:23,181	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:04:23,515	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 22:04:23,525	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /accounts/login/
+2023-06-04 22:04:23,525	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 400 66411
+2023-06-04 22:04:41,050	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 22:04:41,059	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2023-06-04 22:04:41,059	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 400 65314
+2023-06-04 22:06:21,725	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+2023-06-04 22:06:21,737	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2023-06-04 22:06:21,737	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 400 67753
+2023-06-04 22:06:30,800	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+2023-06-04 22:06:30,810	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /login
+2023-06-04 22:06:30,810	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /login HTTP/1.1" 400 67721
+2023-06-04 22:06:37,366	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/private_diary/settings_dev.py changed, reloading.
+2023-06-04 22:06:37,543	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-06-04 22:06:51,806	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-06-04 22:06:52,788	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5374
+2023-06-04 22:06:52,819	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-06-04 22:07:08,033	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/private_diary/settings_dev.py changed, reloading.
+2023-06-04 22:07:08,228	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-06-04 22:07:10,054	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5374
+2023-06-04 22:07:10,068	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-06-04 22:07:10,848	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5374
+2023-06-04 22:07:10,860	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-06-04 22:07:52,154	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5374
+2023-06-04 22:07:52,180	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-06-04 22:08:53,676	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 22:08:53,687	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2023-06-04 22:08:53,687	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 400 65360
+2023-06-04 22:09:01,445	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 22:09:01,455	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2023-06-04 22:09:01,455	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 400 65360
+2023-06-04 22:09:04,830	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 22:09:04,841	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2023-06-04 22:09:04,841	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 400 65360
+2023-06-04 22:09:29,664	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 22:09:29,674	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /account/login
+2023-06-04 22:09:29,674	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /account/login HTTP/1.1" 400 65416
+2023-06-04 22:09:36,246	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 22:09:36,255	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /account/login
+2023-06-04 22:09:36,255	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /account/login HTTP/1.1" 400 65416
+2023-06-04 22:09:57,798	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 22:09:57,808	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /accounts/login
+2023-06-04 22:09:57,808	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login HTTP/1.1" 400 65427
+2023-06-04 22:10:04,330	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login HTTP/1.1" 301 0
+2023-06-04 22:10:09,218	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login HTTP/1.1" 301 0
+2023-06-04 22:10:15,768	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5374
+2023-06-04 22:10:39,657	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5374
+2023-06-04 22:10:49,066	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:10:49,527	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:10:57,055	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5374
+2023-06-04 22:11:07,664	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5374
+2023-06-04 22:11:10,796	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:11:11,242	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:11:29,484	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:11:29,941	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:11:38,361	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5374
+2023-06-04 22:11:40,578	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5374
+2023-06-04 22:12:07,491	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5374
+2023-06-04 22:12:11,168	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:12:11,625	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:13:43,668	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/private_diary/settings_dev.py changed, reloading.
+2023-06-04 22:13:43,848	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-06-04 22:13:45,823	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:13:46,274	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:14:07,313	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:14:07,765	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:14:08,097	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 22:14:08,109	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2023-06-04 22:14:08,110	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 400 66236
+2023-06-04 22:14:52,755	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:14:53,203	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:14:53,535	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 22:14:53,544	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /accounts/login/
+2023-06-04 22:14:53,544	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 400 66411
+2023-06-04 22:15:20,035	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:15:20,480	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:15:20,804	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 22:15:20,813	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /accounts/login/
+2023-06-04 22:15:20,814	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 400 66411
+2023-06-04 22:16:13,884	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:16:14,334	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:16:14,666	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 22:16:14,675	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /accounts/login/
+2023-06-04 22:16:14,675	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 400 66411
+2023-06-04 22:21:04,404	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-06-04 22:21:12,766	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:21:13,213	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:21:13,823	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 22:21:13,836	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /accounts/login/
+2023-06-04 22:21:13,836	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 400 66281
+2023-06-04 22:21:27,093	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:21:27,540	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:21:55,361	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:21:55,807	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:21:56,150	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 22:21:56,159	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /accounts/login/
+2023-06-04 22:21:56,159	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 400 66281
+2023-06-04 22:22:21,838	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 22:22:21,847	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2023-06-04 22:22:21,848	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 400 65184
+2023-06-04 22:23:17,694	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:266)	/workspace/private_diary/settings_dev.py changed, reloading.
+2023-06-04 22:23:17,878	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-06-04 22:23:22,225	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-06-04 22:23:25,680	[ERROR]	/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py(Line:124)	Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev_web:8000'. The domain name provided is not valid according to RFC 1034/1035.
+2023-06-04 22:23:25,692	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2023-06-04 22:23:25,692	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 400 65172
+2023-06-04 22:23:34,620	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET / HTTP/1.1" 200 5374
+2023-06-04 22:25:27,204	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:25:27,652	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:29:04,057	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:29:04,508	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:29:16,834	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:29:17,282	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:33:05,187	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:33:05,637	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:34:29,523	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:34:29,983	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:34:41,582	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:34:42,034	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:34:57,307	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-06-04 22:35:01,358	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:35:01,809	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:35:38,698	[INFO]	/usr/local/lib/python3.11/site-packages/django/utils/autoreload.py(Line:668)	Watching for file changes with StatReloader
+2023-06-04 22:35:42,945	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:35:43,406	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:35:43,754	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4347
+2023-06-04 22:35:43,765	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
+2023-06-04 22:35:43,767	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1831
+2023-06-04 22:35:43,768	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
+2023-06-04 22:35:44,104	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4574
+2023-06-04 22:35:44,111	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1831
+2023-06-04 22:37:41,664	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:37:42,122	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:37:42,460	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4347
+2023-06-04 22:37:42,468	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
+2023-06-04 22:37:42,470	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1831
+2023-06-04 22:37:42,470	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
+2023-06-04 22:37:42,786	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 200 4566
+2023-06-04 22:37:42,793	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1831
+2023-06-04 22:38:04,035	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:38:04,503	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:38:04,839	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4347
+2023-06-04 22:38:04,846	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
+2023-06-04 22:38:04,848	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1831
+2023-06-04 22:38:04,849	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
+2023-06-04 22:38:05,276	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 302 0
+2023-06-04 22:38:05,284	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /diary-list HTTP/1.1" 200 4163
+2023-06-04 22:38:05,293	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/clean-blog.min.css HTTP/1.1" 404 1819
+2023-06-04 22:38:05,293	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1831
+2023-06-04 22:38:39,313	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/signup/ HTTP/1.1" 200 4261
+2023-06-04 22:38:39,324	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-06-04 22:39:03,607	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/signup/ HTTP/1.1" 302 0
+2023-06-04 22:39:03,616	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/confirm-email/ HTTP/1.1" 200 3913
+2023-06-04 22:39:03,637	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-06-04 22:39:12,080	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/confirm-email/Mg:1q5nwl:4w9zCOBE71NljdgormXSl0O_taZMH_VHiv4TmYBpU7c/ HTTP/1.1" 200 3624
+2023-06-04 22:39:12,097	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-06-04 22:39:13,623	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/confirm-email/Mg:1q5nwu:s9juq0cH4ucQylAfg_urTDoMbJXYDBXhz_5a9_clrR8/ HTTP/1.1" 302 0
+2023-06-04 22:39:13,629	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4756
+2023-06-04 22:39:13,641	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-06-04 22:39:25,996	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 302 0
+2023-06-04 22:39:26,003	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /diary-list HTTP/1.1" 200 4165
+2023-06-04 22:39:26,019	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/clean-blog.min.css HTTP/1.1" 404 1825
+2023-06-04 22:39:26,019	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1837
+2023-06-04 22:39:40,437	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:39:40,887	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/
+2023-06-04 22:39:41,219	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /accounts/login/ HTTP/1.1" 200 4347
+2023-06-04 22:39:41,227	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/mystyle.css HTTP/1.1" 200 163
+2023-06-04 22:39:41,228	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1831
+2023-06-04 22:39:41,229	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/one-page-wonder.css HTTP/1.1" 200 239327
+2023-06-04 22:39:41,678	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"POST /accounts/login/ HTTP/1.1" 302 0
+2023-06-04 22:39:41,685	[INFO]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /diary-list HTTP/1.1" 200 4165
+2023-06-04 22:39:41,692	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/css/clean-blog.min.css HTTP/1.1" 404 1819
+2023-06-04 22:39:41,693	[WARNING]	/usr/local/lib/python3.11/site-packages/django/core/servers/basehttp.py(Line:212)	"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1831
+2023-06-04 22:43:28,372	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-delete/999/
+2023-06-04 22:43:28,818	[WARNING]	/usr/local/lib/python3.11/site-packages/django/utils/log.py(Line:241)	Not Found: /diary-update/999/

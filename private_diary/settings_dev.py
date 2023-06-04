@@ -1,4 +1,5 @@
 from .settings_common import *
+import os
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
@@ -8,7 +9,7 @@ SECRET_KEY = 'django-insecure-9$rg%un*(%g$)$y%b6^1wkotz$nka%pixvn)achk-4)&c37()l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 LOGGING = {
     'version': 1,
