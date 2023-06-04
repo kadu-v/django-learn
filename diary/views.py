@@ -1,4 +1,4 @@
-from typing import Any, Optional
+from typing import Any
 from django.db.models.query import QuerySet
 from django.http import HttpResponse
 from django.views import generic
@@ -18,15 +18,15 @@ class OnlyYouMixin(UserPassesTestMixin):
     raise_exception = True
 
     def test_func(self) -> bool | None:
-        diary = get_object_or_404(Diary, pk=self.kwargs["pk"])  # type: ignore
-        return self.request == diary.user  # type: ignore
+        diary = get_object_or_404(Diary, pk=self.kwargs['pk'])  # type: ignore
+        return self.request.user == diary.user  # type: ignore
 
 
-class IndexView(OnlyYouMixin, generic.TemplateView):
+class IndexView(generic.TemplateView):
     template_name = "index.html"
 
 
-class InquiryView(OnlyYouMixin, generic.FormView):
+class InquiryView(generic.FormView):
     template_name = "inquiry.html"
     form_class = InquiryForm
     success_url = reverse_lazy('diary:inquiry')
@@ -38,7 +38,7 @@ class InquiryView(OnlyYouMixin, generic.FormView):
         return super().form_valid(form)
 
 
-class DiaryListView(LoginRequiredMixin, OnlyYouMixin, generic.ListView):
+class DiaryListView(LoginRequiredMixin, generic.ListView):
     model = Diary
     template_name = 'diary_list.html'
     paginate_by = 2
